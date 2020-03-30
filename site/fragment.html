@@ -10,11 +10,36 @@
 			margin-right:auto;
 			display: block;
 		}
+		a:hover,a:active
+		{
+			background-color: white;
+			color:black;
+		}
+		li a,section a
+		{
+			list-style: none;
+			text-decoration: none;
+			background-color: black;
+			border:1px solid black;
+			display:block;
+			width:75px;
+			margin-bottom:10px;
+			color:white;
+		}
+
+		
 		body
 		{
 			background-image: radial-gradient(red,black);
 		}
-		h1
+		h1.top
+		{
+			color:white;
+			background-color: black;
+			font-weight: bold;
+			opacity: 0.8;
+		}
+		h1.middle
 		{
 			color:white;
 			font-weight: bold;
@@ -28,7 +53,7 @@
 		}
 		a
 		{
-			color:blue;
+			color:white;
 		}
 		p
 		{
@@ -42,10 +67,10 @@
 	</style>
 </head>
 <body>
-	<h1 align="center" id="Top"> MANCHESTER UNITED</h1>
+	<h1 align="center" id="Top" class="top"> MANCHESTER UNITED</h1>
 	<h3 align="center"> <a href="http://manutd.com" target="_blank" title="Opens in new window"> Go to official website </a> </h3>
 	<img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1024px-Manchester_United_FC_crest.svg.png" width="100" height="100" alt="Manchester United" id="image">
-	<h1> Index </h1>
+	<h1 class="middle"> Index </h1>
 	<ul>
 		<li> <a href="#History"> History </a> </li>
 		<li> <a href="#Grounds"> Grounds</a> </li>
