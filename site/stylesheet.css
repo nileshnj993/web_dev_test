@@ -1,0 +1,14 @@
+body
+{
+	color:white;
+	background-color: gray;
+}
+
+p:hover,p:active
+{
+	color:black;
+	background-color: white;
+	width:90px;
+	margin-left: auto;
+	margin-right: auto;
+}

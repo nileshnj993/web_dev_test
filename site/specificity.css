@@ -1,0 +1,8 @@
+.blue
+{
+	color:blue; /* if I use !important here, all elements with class as blue will turn text color to blue*/
+}
+#green
+{
+	color:green;
+}
