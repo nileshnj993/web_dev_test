@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title> Introduction </title>
+ 
   </head>
   <body>
     <p>This repository covers various html files created while finishing the Web Development Course by John Hopkins University. </p>
