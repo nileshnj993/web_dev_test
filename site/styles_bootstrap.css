@@ -1,12 +1,9 @@
-*
+.row>div
 {
-	background-color: #00AA99;
+	border: 5px solid black;
+	background-color: red;
 }
-
-h1
+.row
 {
-	text-align:center;
-	margin-top: 30px;
-	font-style: italic;
-	font-weight: bold;
+	margin-bottom: 15px;
 }
