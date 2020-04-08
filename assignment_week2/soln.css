@@ -1,0 +1,170 @@
+*
+{
+	font-family: arial, helvetica, sans-serif;
+		box-sizing: border-box;
+		padding: 0;
+}
+
+section
+{
+	background-color: #00aaff;
+	font-size: 125%;
+	font-weight: bold;
+	padding:10px;
+
+}
+h1
+{
+	margin-bottom: 50px;
+	text-align: center;
+	margin-top:30px;
+	font-size:175%;
+	font-weight: bold;
+	
+}
+
+@media(min-width: 992px)
+{
+section
+{
+
+	width:30.17%;
+	height:250px;
+	float:left;
+	margin-right:1.5%;
+	margin-left: 1.5%;
+	margin-bottom: 30px;
+	border: 1px solid black;
+}
+#d2,#d3,#d4
+{
+	border: 1px solid black;
+	width:35%;
+	position: relative;
+	bottom:5%;
+	left:67.5%;
+	height:15%;
+
+}
+#d2
+{
+	background-color: #88ff00;
+	padding:1% 0 0 7%;
+}
+#d3
+{
+	background-color: #ff5500;
+	padding:1% 0 0 9%;
+}
+#d4
+{
+	background-color:#00ddbb;
+	padding:1% 0 0 9%;
+}
+}
+@media(min-width: 768px) and (max-width: 991px)
+{
+	#chicken,#beef
+	{
+	width:47%;
+	height:250px;
+	float:left;
+	
+	margin-right:1.5%;
+	margin-left: 1.5%;
+	margin-bottom: 30px;
+	border: 1px solid black;
+	}
+	#sushi
+	{
+		border: 1px solid black;
+		clear:left;
+		height:250px;
+		display: block;
+		margin-bottom: 30px;
+		margin-right:1.5%;
+	    margin-left: 1.5%;
+	}
+	#d2,#d3,#d4
+{
+	border: 1px solid black;
+	width:35%;
+	position: relative;
+	bottom:5%;
+	left:67.5%;
+	height:15%;
+
+}
+#d2
+{
+	background-color: #88ff00;
+	padding:1% 0 0 7%;
+}
+#d3
+{
+	background-color: #ff5500;
+	padding:1% 0 0 9%;
+}
+#d4
+{
+	background-color:#00ddbb;
+	padding:1% 0 0 9%;
+}
+}
+@media(max-width: 767px)
+{
+	section
+	{
+		clear:left;
+		
+		margin-left: 5%;
+		margin-bottom: 30px;
+		border: 1px solid black;
+		height:250px;
+		width:90%;
+	}
+	#d2,#d3,#d4
+{
+	border: 1px solid black;
+	width:35%;
+	position: relative;
+	bottom:5%;
+	left:67.5%;
+	height:15%;
+
+}
+#d2
+{
+	background-color: #88ff00;
+	padding:1% 0 0 7%;
+}
+#d3
+{
+	background-color: #ff5500;
+	padding:1% 0 0 9%;
+}
+#d4
+{
+	background-color:#00ddbb;
+	padding:1% 0 0 9%;
+}
+}
+#d1
+{
+	width: 100%;
+}
+
+#chicken
+{
+	background-color: #8800ff;
+}
+
+#beef
+{
+
+}
+
+#sushi
+{
+	background-color: #ff2244;
+}
