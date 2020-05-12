@@ -12,7 +12,7 @@
  
 
     
- Responsive code that adjusts according to screen size. Bootstrap classes used along with other css styling.  </p>
+ Responsive code that adjusts according to screen size. Bootstrap classes used along with other css styling and js code.  </p>
     </body>
     </html>
     
