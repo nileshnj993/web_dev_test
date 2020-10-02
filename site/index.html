@@ -1,7 +1,137 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Hello Coursera</title>
-</head>
-<body><h1>Hello coursera</h1></body>
+<html lang="en" color-mode="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode Demo</title>
+    <script>
+      if (
+        localStorage.getItem("color-mode") === "dark" ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches &&
+          !localStorage.getItem("color-mode"))
+      ) {
+        document.documentElement.setAttribute("color-mode", "dark");
+      }
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <svg style="display: none;">
+      <symbol viewBox="0 0 24 24" id="moon">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="sun">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </symbol>
+    </svg>
+    <main class="color-mode">
+      <section class="color-mode__section">
+        <header class="color-mode__header">
+          <button
+            class="color-mode__btn light--hidden"
+            aria-label="Toggle light mode">
+            <svg aria-hidden="true">
+              <title>Light Mode</title>
+              <use href="#sun"></use>
+            </svg>
+          </button>
+          <button
+            class="color-mode__btn dark--hidden"
+            aria-label="Toggle dark mode">
+            <svg aria-hidden="true">
+              <title>Dark Mode</title>
+              <use href="#moon"></use>
+            </svg>
+          </button>
+        </header>
+        <div class="color-mode__container dark--hidden">
+          <h1>Hello Coursera!</h1>
+          <div class="color-mode__link-container">
+            <a
+              href="https://www.coursera.org/"
+              target="blank"
+              class="color-mode__link"
+              >Go to Coursera.</a
+            >
+          </div>
+          <h2>Making Pull requests in Github</h2>
+          <p>
+            <ul>
+                <li>
+                    Fork a repository
+                </li>
+                <li>
+                    Clone it to your local machine using <br>
+                    <code>$ git clone "https://github.com/userid/repository"</code> 
+                </li>
+                <li>
+                    Create a new branch to work on, using <code>$git checkout -b new-branch</code><br>
+                </li>
+                <li>
+                    Stage and Commit local changes using <code>$git add . </code> and <br>
+                    <code>$ git commit -m "description"</code> respectively.
+                </li>
+                <li>
+                    Use <code>$ git status </code> to verify that your changes are committed by Git.
+                </li>
+                <li>
+                    You can use the git push command to push the changes to the current branch of your forked repository<br>
+                    <code>$ git push --set-upstream origin new-branch</code>
+                </li>
+                <li>
+                    For the final step click <a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github#create-pull-request">here</a>
+                </li>
+            </ul>
+          </p>
+        </div>
+        <div class="color-mode__container light--hidden">
+          <h1>Hello Coursera!</h1>
+          <div class="color-mode__link-container">
+            <a
+              href="https://www.coursera.org/"
+              target="blank"
+              class="color-mode__link">Go to Coursera.</a>
+          </div>
+          <h2>Making Pull requests in Github</h2>
+          <p>
+            <ul>
+                <li>
+                    Fork a repository
+                </li>
+                <li>
+                    Clone it to your local machine using <br>
+                    <code>$ git clone "https://github.com/userid/repository"</code> 
+                </li>
+                <li>
+                    Create a new branch to work on, using <code>$git checkout -b new-branch</code><br>
+                </li>
+                <li>
+                    Stage and Commit local changes using <code>$git add . </code> and <br>
+                    <code>$ git commit -m "description"</code> respectively.
+                </li>
+                <li>
+                    Use <code>$ git status </code> to verify that your changes are committed by Git.
+                </li>
+                <li>
+                    You can use the git push command to push the changes to the current branch of your forked repository<br>
+                    <code>$ git push --set-upstream origin new-branch</code>
+                </li>
+                <li>
+                    For the final step click <a href="https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github#create-pull-request">here</a>
+                </li>
+            </ul>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>
